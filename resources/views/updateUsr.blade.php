@@ -194,6 +194,7 @@
         data: registro,
         success: function(data) {
           alert(data.mensaje);
+          location.reload(true);
         },
         error: function() {
           alert("Error al actualizar los datos");
