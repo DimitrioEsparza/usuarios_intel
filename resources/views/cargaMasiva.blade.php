@@ -162,8 +162,8 @@
             url: "/cargaMasivaDatos",
             data: { 'datos': JSON.stringify(datos) },
             success: function(data){
-                //alert(data);
                 alert(data.mensaje);
+                location.reload(true);
             },
             error: function() {
               alert("Imposible cargar los registros masivos");
