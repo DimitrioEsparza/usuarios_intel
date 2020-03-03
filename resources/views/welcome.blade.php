@@ -229,7 +229,6 @@
             url: "/searchUsuario",
             data: "id="+ id,
             success: function(data){
-              debugger;
               $("#upId").val(data.id);
               $("#upNombre").val(data.nombre);
               $("#upApellido").val(data.apellido);
@@ -276,7 +275,6 @@
         url: "/updateUsuario",
         data: registro,
         success: function(data) {
-          debugger;
           alert(data.mensaje);
         },
         error: function() {
